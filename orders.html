@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8" /> 
+	<title> St Germain Bistro- Orders </title>
+
+<style type="text/css">
+body {
+  width: 100%;
+  float: left;
+}
+
+h1, p, li{ 
+	color:  #970104
+}
+
+h1 {
+  text-align: center;
+}
+
+</style>
+
+
+ <body>
+ <header>
+ 	<h1> Orders </h1>
+ 	<hr/>
+	<nav>
+		<ul>
+			<li><a href="home.html"> Home </a> </li>
+			<li><a href="vin.html"> Vin </a></li>
+			<li><a href="entrees.html"> Entrees </a></li>
+			<li><a href="desserts.html"> Desserts </a></li>
+			<li> <a href="orders.html"> Orders </a></li>
+		</ul>
+	</nav>
+ </header>
+
+<p>Order Form</p>
+
+<FORM ACTION="processorder.php" method=post>
+<table>
+
+
+<tr>
+<td> <select id= "vin" name="vin" >
+<option value="" disabled="disabled" selected="selected">Vin</option>
+<option value="champagne"> Champagne </option>
+<option value="sauvblanc"> Sauvignon Blanc </option>
+<option value="bordeaux"> Bordeaux </option>
+<option value="merlot"> Merlot </option>
+</select>
+</td>
+<td ><input type="text" name="qtyvin" size="3" maxlength="3"></td>
+</tr>
+
+<tr>
+<td> <select id= "entrees" name="entrees">
+<option value="" disabled="disabled" selected="selected">Entrees</option>
+<option value="smokeduck"> Smoked Duck </option>
+<option value="rat"> Ratatouille </option>
+<option value="filetmignon"> Filet Mignon </option>
+<option value="cheese"> Cheese Board </option>
+</select>
+</td>
+
+<td ><input type="text" name="qtyentrees" size="3" maxlength="3"></td>
+</tr>
+
+<tr>
+<td> <select id= "desserts" name="desserts" >
+<option value="" disabled="disabled" selected="selected">Desserts</option>
+<option value="chocolate"> Chocolate Souffle Cake </option>
+<option value="cremebrulee"> Crème Brûlée </option>
+<option value="fruitart"> Fruit Tart </option>
+</select>
+</td>
+<td ><input type="text" name="qtydesserts" size="3" 
+maxlength="3"></td>
+</tr>
+
+</table>
+</form>
+<p>
+<button onclick="myFunction2()">Order Now</button>
+
+<script>
+function myFunction2() {
+    alert("Thank you for your business");
+}
+</script>
+
+<button onclick="myFunction()">Cancel</button>
+
+<script>
+function myFunction() {
+    alert("Sorry for not being able to do business with you");
+}
+</script>
+<p>
+	
+</body>
+</html>
